@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Link Save",
+    "version": "1.0",
+    "description": "This extensions saves your links for later visits.",
+    "browser_action": {
+        "default_icon": "icon16.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    // "options_page": "options.html",
+
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false // event page
+    },
+
+    "permissions": [
+        "storage",
+        "notifications",
+        "contextMenus"
+    ]
+}

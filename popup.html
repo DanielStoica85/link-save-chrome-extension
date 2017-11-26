@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Link Save</title>
+</head>
+
+<body>
+
+    <section id="brand">
+        <h1>
+            <span class="highlight">Link</span> Save</h1>
+    </section>
+
+
+    <section id="add-link">
+
+        <div class="container">
+            <h3>Add a new link</h3>
+            <div class="custom-hr">.</div>
+            <div class="row">
+                <h4>Enter link url:</h4>
+                <input type="text" id="link" placeholder="Please enter a valid URL..." required>
+                <h4>Enter link name:</h4>
+                <input type="text" id="link-name" placeholder="Enter link name...">
+                <p id="error">Please enter url and name.</p>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary" id="save">Save</button>
+                <button class="btn btn-primary" id="cancel">Cancel</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <section id="links-list">
+
+        <div class="container">
+            <input type="text" id="link-search" placeholder="Search by name...">
+
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Google</h4>
+                    <p class="list-group-item-text">http://www.google.com</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Yahoo</h4>
+                    <p class="list-group-item-text">www.yahoo.com</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Facebook</h4>
+                    <p class="list-group-item-text">www.facebook.com</p>
+                </a>
+            </div>
+        </div>
+
+    </section> -->
+
+    <section class="recap">
+        <p>You currently have <span id="total">0</span> saved <span>links</span>.</p>
+        <p><a href="list.html"><span>Click here</span></a> to view the links list.</p>
+    </section>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>

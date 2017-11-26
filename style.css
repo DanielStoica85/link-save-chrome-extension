@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 300px;
+    text-align: center;
+}
+
+h1, h2, h3, h2, p, span {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+input {
+    width: 75%;
+    padding: 10px 10px;
+    color: #101111;
+    background-color: #f4f4f4;
+    border: 1px solid #556677;
+    border-radius: 5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+input:focus {
+    border: 3px solid #e56700; 
+    color: black;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Brand section */
+
+#brand {
+    background-color: #101111;
+    color: #fff;
+    border-bottom: #e56700 3px solid;
+    border-radius: 5px 5px 0px 0px;
+    height: 100%;
+    padding: 5px 0;
+}
+
+#brand h1 {
+    margin-top: 10px;
+}
+
+#brand span {
+    color: #e56700;
+}
+
+.custom-hr {
+    width: 15%;
+    font-size: 1px;
+    line-height: 5px;
+    background-color: #101111;
+    margin: 0 auto;
+}
+
+/* Add link section */
+
+#add-link {
+    background-color: #556677;
+    padding: 10px 0 20px 0;
+    color: #fff;
+}
+
+#add-link h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#add-link .btn {
+    margin-top: 10px;
+}
+
+ button#save {
+    background-color: #e56700;
+    height: 2.5em;
+    width: 75px;
+    margin-right: 20px;
+    box-shadow: 1px 2px 5px #000000;
+}
+
+button#cancel {
+    background-color: #115588;
+    height: 2.5em;
+    width: 75px;
+    box-shadow: 1px 2px 5px #000000;
+}
+
+p#error {
+    color: #e56700;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    display: none;
+}
+/* Links list section */
+
+#links-list {
+    background-color: #556677;
+    height: 100%;
+    padding: 15px 0;
+}
+
+#link-search {
+    background-color: #101111;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#link-search:focus {
+    width: 100%;
+}
+
+.list-group-item {
+    text-align: left;
+    overflow: hidden;
+}
+
+.list-group-item-text {
+    width: 100%;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #101111;
+}
+
+.list-group-item a:hover {
+    color: #e56700;
+    font-weight: bold;
+}
+
+/* Recap section */
+
+.recap {
+    background-color: #101111;
+    color: #fff;
+    border-bottom: #e56700 3px solid;
+    height: 100%;
+    padding: 10px;
+}
+
+.recap p {
+    margin: 0;
+}
+
+.recap span {
+    color: #e56700;
+}
+
+.recap a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
