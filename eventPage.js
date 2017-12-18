@@ -17,9 +17,11 @@ chrome.contextMenus.onClicked.addListener(function(clickedData) {
                 console.log('There was a linkslist!!!');
                 savedLinks = result.linksList;
                 console.log(savedLinks);
+                let currentLastIndex = savedLinks[savedLinks.length - 1].index;
                 savedLinks.push({
                     title: 'New Link',
-                    url: clickedData.linkUrl
+                    url: clickedData.linkUrl,
+                    index: currentLastIndex + 1
                 });
                 console.log(savedLinks);
                 chrome.storage.sync.set({
@@ -37,7 +39,8 @@ chrome.contextMenus.onClicked.addListener(function(clickedData) {
                 console.log('There was no linkslist!!!');
                 savedLinks = [{
                     title: 'New Link',
-                    url: clickedData.linkUrl
+                    url: clickedData.linkUrl,
+                    index: 1
                 }];
                 chrome.storage.sync.set({
                     'linksList': savedLinks

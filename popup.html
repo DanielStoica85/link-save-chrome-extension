@@ -12,13 +12,12 @@
 
 <body>
 
-    <section id="brand">
+    <section class="brand">
         <h1>
             <span class="highlight">Link</span> Save</h1>
     </section>
 
-
-    <section id="add-link">
+    <section class="main">
 
         <div class="container">
             <h3>Add a new link</h3>
@@ -29,6 +28,7 @@
                 <h4>Enter link name:</h4>
                 <input type="text" id="link-name" placeholder="Enter link name...">
                 <p id="error">Please enter url and name.</p>
+                <p id="duplicate">Please enter unique url and name.</p>
             </div>
             <div class="row">
                 <button class="btn btn-primary" id="save">Save</button>
@@ -37,29 +37,6 @@
         </div>
 
     </section>
-
-    <!-- <section id="links-list">
-
-        <div class="container">
-            <input type="text" id="link-search" placeholder="Search by name...">
-
-            <div class="list-group">
-                <a href="#" class="list-group-item">
-                    <h4 class="list-group-item-heading">Google</h4>
-                    <p class="list-group-item-text">http://www.google.com</p>
-                </a>
-                <a href="#" class="list-group-item">
-                    <h4 class="list-group-item-heading">Yahoo</h4>
-                    <p class="list-group-item-text">www.yahoo.com</p>
-                </a>
-                <a href="#" class="list-group-item">
-                    <h4 class="list-group-item-heading">Facebook</h4>
-                    <p class="list-group-item-text">www.facebook.com</p>
-                </a>
-            </div>
-        </div>
-
-    </section> -->
 
     <section class="recap">
         <p>You currently have <span id="total">0</span> saved <span>links</span>.</p>
