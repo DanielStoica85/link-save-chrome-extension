@@ -83,7 +83,7 @@ input:focus {
     margin-top: 10px;
 }
 
-button#save {
+input#save {
     background-color: #e56700;
     height: 2.5em;
     width: 75px;

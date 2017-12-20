@@ -19,7 +19,8 @@ chrome.storage.sync.get('linksList', function (result) {
             element.url = "http://" + element.url;
         };
         var listElement = '<li class="list-group-item"' +' data-index=' + element.index + '><a href="' + element.url + '" class="added-link">' + 
-        '<h4 class="list-group-item-heading">' + element.title + '</h4></a><button class="btn btn-xs qr-code"><span class="glyphicon glyphicon-qrcode"></span></button>' + '<p class="list-group-item-text"><a href="' + element.url + '" class="added-link">' + element.url.substring(0, 20) + '...' + '</a></p><button class="btn btn-xs delete-url"><span class="glyphicon glyphicon-remove"></span></button></li>';
+        '<h4 class="list-group-item-heading">' + element.title + '</h4></a><button class="btn btn-xs qr-code"><span class="glyphicon glyphicon-qrcode"></span></button><a href="edit.html?index=' + element.index + '" class="btn btn-xs edit-url"><span class="glyphicon glyphicon-edit"></span></a>' 
+        + '<p class="list-group-item-text"><a href="' + element.url + '" class="added-link">' + element.url.substring(0, 20) + '...' + '</a></p><button class="btn btn-xs delete-url"><span class="glyphicon glyphicon-remove"></span></button></li>';
         linksUl.innerHTML += listElement;
     });
 

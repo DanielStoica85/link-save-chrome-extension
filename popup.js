@@ -5,6 +5,7 @@ var totalSpan = document.getElementById('total');
 
 var saveButton = document.getElementById('save');
 var cancelButton = document.getElementById('cancel');
+var addForm = document.getElementById('add-link');
 
 // chrome.storage.sync.clear(function() {
 //     console.log('Storage cleared.');
@@ -14,13 +15,11 @@ var cancelButton = document.getElementById('cancel');
 chrome.storage.sync.get('linksList', function (result) {
     if (result.linksList && result.linksList.length !== 0) {
         totalSpan.textContent = result.linksList.length;
-    }
-    else if (result.linksList && result.linksList.length === 0) {
-        chrome.storage.sync.clear(function() {
+    } else if (result.linksList && result.linksList.length === 0) {
+        chrome.storage.sync.clear(function () {
             totalSpan.textContent = '0';
         });
-    }
-     else {
+    } else {
         totalSpan.textContent = '0';
     }
 });
@@ -32,13 +31,13 @@ cancelButton.addEventListener('click', function () {
 });
 
 // manually save an url
-saveButton.addEventListener('click', function () {
+addForm.addEventListener('submit', function (e) {
+    e.preventDefault();
     if (titleInput.value == '' || urlInput.value == '') {
         errorMessage.style.display = 'block';
-    } else {
-        
+    } 
+    else {
         errorMessage.style.display = 'none';
-
         chrome.storage.sync.get('linksList', function (result) {
             var savedLinks = [];
             if (result.linksList) {
@@ -93,3 +92,4 @@ saveButton.addEventListener('click', function () {
         });
     }
 });
+
