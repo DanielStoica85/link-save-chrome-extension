@@ -15,6 +15,6 @@ Here are the most important things you can do with this extension:
 
 ## Install
 
-[Click here](https://chrome.google.com/webstore/detail/link-save/hnpbcoobdmlojdacjmjgglfmnaakenod?utm_source=gmail) to go to the Chrome Web Store and click 'Install.' The plugin is compatible with all Chromium browsers.
+[Click here](https://chrome.google.com/webstore/detail/link-save/hnpbcoobdmlojdacjmjgglfmnaakenod) to go to the Chrome Web Store and click 'Install.' The plugin is compatible with all Chromium browsers.
 
 ### Enjoy!
