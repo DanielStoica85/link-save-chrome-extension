@@ -155,6 +155,7 @@ p#error, p#duplicate {
 }
 
 #links-list h4 {
+<<<<<<< HEAD
     width: 60%;
     display: inline-block;
     margin-bottom: 10px;
@@ -165,6 +166,16 @@ p#error, p#duplicate {
     width: 60%;
     display: inline-block;
     margin-left: 10px;
+=======
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#links-list p {
+    width: 80%;
+    display: inline-block;
+>>>>>>> cbd62fdda220acc9ef1b290fb495802e9f12ee05
 }
 
 .qr-code {

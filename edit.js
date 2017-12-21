@@ -50,6 +50,12 @@ editForm.addEventListener('submit', function (e) {
                     message: 'Link with the title ' + titleInput.value + ' was edited and saved.'
                 }
                 chrome.notifications.create('urlSavedNotification', options);
+<<<<<<< HEAD
+=======
+
+                titleInput.value = '';
+                urlInput.value = '';
+>>>>>>> cbd62fdda220acc9ef1b290fb495802e9f12ee05
                 totalSpan.textContent = savedLinks.length;
             });
 
